@@ -8,6 +8,7 @@
 	var results = [];
   var readyOrgs = JSON.stringify(orgsArray);
   readyOrgs.forEach(function(org) {
+  	//only by suburb for testing purposes
   	if(org.OrgSuburb == suburbInput) {
     	results.push(org);
     }
