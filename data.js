@@ -39,7 +39,7 @@ var orgsArray =  [
                         },
                         { "OrgName": "Anglicare Y-shac Rockingham",
                         "OrgField": "Accommodation",
-                        "OrgSuburb": "Rockingham/Baldivis",
+                        "OrgSuburb": "Rockingham",
                         "OrgAge": "15-20",
                         "OrgContact": 895233400,
                         "OrgHours": "Weekdays 24 hours",
@@ -146,7 +146,7 @@ var orgsArray =  [
                         {
                         "OrgName": "City of Rockingham Youth Services",
                         "OrgField": "General Youth Services",
-                        "OrgSuburb": "Rockingham/Baldivis",
+                        "OrgSuburb": "Rockingham",
                         "OrgAge": "12-25",
                         "OrgContact": 95288689,
                         "OrgHours": "Weekdays 9 am - 5 pm",
@@ -176,7 +176,7 @@ var orgsArray =  [
                         {
                         "OrgName": "City of Canning Youth Accommodation Service",
                         "OrgField": "Accommodation",
-                        "OrgSuburb": "Canning/Lynwood",
+                        "OrgSuburb": "Canning",
                         "OrgAge": "11-21",
                         "OrgContact": 894617182,
                         "OrgHours": "Weekdays 9am - 5:30pm",
@@ -246,7 +246,7 @@ var orgsArray =  [
                         {
                         "OrgName": "Horizon House General Services",
                         "OrgField": "Accommodation",
-                        "OrgSuburb": "Geraldton/Wanneroo/Wilson",
+                        "OrgSuburb": "Geraldton",
                         "OrgAge": "16-22",
                         "OrgContact": 891921548,
                         "OrgHours": "Weekdays 8:30am-4:30pm",
@@ -296,7 +296,7 @@ var orgsArray =  [
                         {
                         "OrgName": "Parkerville Reconnect",
                         "OrgField": "General Youth Services",
-                        "OrgSuburb": "Parkerville/Midland",
+                        "OrgSuburb": "Parkerville",
                         "OrgAge": "12-18",
                         "OrgContact": 892748440,
                         "OrgHours": "Weekdays 9 am - 5 pm",
@@ -306,7 +306,7 @@ var orgsArray =  [
                         {
                         "OrgName": "PICYS-Household Network",
                         "OrgField": "Accommodation",
-                        "OrgSuburb": "Perth/Leederville",
+                        "OrgSuburb": "Leederville",
                         "OrgAge": "16-25",
                         "OrgContact": 893882791,
                         "OrgHours": "Weekdays 9 am - 5 pm",
@@ -316,7 +316,7 @@ var orgsArray =  [
                         {
                         "OrgName": "PICYS-PILLAR",
                         "OrgField": "Mental Health",
-                        "OrgSuburb": "Perth/Leederville",
+                        "OrgSuburb": "Leederville",
                         "OrgAge": "15-20",
                         "OrgContact": 893882791,
                         "OrgHours": "Weekdays 9 am - 5 pm",
