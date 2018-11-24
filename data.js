@@ -708,4 +708,12 @@ var orgsArray =  [
         "web": "http://www.unitingcarewest.org.au/services/indigenous-communities/aboriginal-family-respite-service/"
     }
 ];
-console.alert(orgsArray[1].age);
+
+$(function () {
+    for(var j = 0; j < orgsArray.length; j++) {
+
+    }
+}
+
+)
+    
