@@ -1,11 +1,16 @@
+function makeRange(min, max) {
+    var numlist = [];
+    for(var i = min; i <= max; i++) {
+        num.push(i);
+    }
+}
+
 var orgsArray =  [
 				{   
-                        /* makeRange is a custom function that stores any numbers between the two integer arguments
-                            given. Not working properly yet. */
                         "name": "55 Central Inc",
                         "field": "Accommodation",
                         "suburb": "Maylands",
-                        "age": //makeRange(18, 25),
+                        "age": makeRange(18, 25),
                         "contact": 189272133,
                         "hours": "24 hours All Week",
                         "address": "55 Central Avenue Maylands, WA 6051",
@@ -15,7 +20,7 @@ var orgsArray =  [
                         "name": "AccordWest",
                         "field": "Accommodation",
                         "suburb": "Mandurah",
-                        "age": //makeRange(12, 25),
+                        "age": makeRange(12, 25),
                         "contact": 800115799,
                         "hours": "Weekdays 9 am - 5 pm",
                         "address": "4/19 Davey Street Mandurah WA 6210",
@@ -25,7 +30,7 @@ var orgsArray =  [
                         "name": "Activ Foundation",
                         "field": "Accommodation",
                         "suburb": "Wembley",
-                        "age": //makeRange(12, 25),
+                        "age": makeRange(12, 25),
                         "contact": 893870555,
                         "hours": "Weekdays 8am - 4:30pm",
                         "address": "327 Cambridge St Wembley WA 6913",
@@ -35,7 +40,7 @@ var orgsArray =  [
                         "name": "Albany Youth Support Association (Young House)",
                         "field": "Accommodation",
                         "suburb": "Albany",
-                        "age": //makeRange(12, 25),
+                        "age": makeRange(12, 25),
                         "contact": 898422082,
                         "hours": "Weekdays 9 am - 5 pm",
                         "address": "12 Young St Albany WA 6330",
@@ -45,7 +50,7 @@ var orgsArray =  [
                         "name": "Anglicare Y-shac Rockingham",
                         "field": "Accommodation",
                         "suburb": "Rockingham/Baldivis",
-                        "age": //makeRange(15, 20),
+                        "age": makeRange(15, 20),
                         "contact": 895233400,
                         "hours": "Weekdays 24 hours",
                         "address": "62 Fifty Road Baldivis WA 6171",
@@ -55,7 +60,7 @@ var orgsArray =  [
                         "name": "Anglicare Y-shac Spearwood",
                         "field": "Accommodation",
                         "suburb": "Spearwood",
-                        "age": //makeRange(15, 20),
+                        "age": makeRange(15, 20),
                         "contact": 894120673,
                         "hours": "Weekdays 24 hours",
                         "address": "243 Spearwood Avenue Spearwood WA 6163",
@@ -66,7 +71,7 @@ var orgsArray =  [
                         "name": "Anglicare YES! Housing",
                         "field": "Accommodation",
                         "suburb": "East Perth",
-                        "age": //makeRange(15, 17),
+                        "age": makeRange(15, 17),
                         "contact": 892632009,
                         "hours": "Weekdays 8:30am - 4:30pm",
                         "address": "23 Adelaide Tce East Perth WA 6004",
@@ -76,7 +81,7 @@ var orgsArray =  [
                         "name": "Armadale Youth Accommodation Service",
                         "field": "Accommodation",
                         "suburb": "Armadale",
-                        "age": //makeRange(15, 20),
+                        "age": makeRange(15, 20),
                         "contact": 894971351,
                         "hours": "24 hours All Week",
                         "address": "317 Railway Ave Armadale WA 6112",
@@ -86,7 +91,7 @@ var orgsArray =  [
                         "name": "Avon Youth Merredin",
                         "field": "Accommodation",
                         "suburb": "Merredin",
-                        "age": //makeRange(12, 24),
+                        "age": makeRange(12, 24),
                         "contact": 890415286,
                         "hours": "Weekdays 9 am - 5 pm",
                         "address": "52 Barrack St Merredin WA 6515",
@@ -96,7 +101,7 @@ var orgsArray =  [
                         "name": "Avon Youth Narrogin",
                         "field": "Accommodation",
                         "suburb": "Narrogin",
-                        "age": //makeRange(12, 24),
+                        "age": makeRange(12, 24),
                         "contact": 898816001,
                         "hours": "Mon-TuespWed 9am-5pm",
                         "address": "Shop 7/9 Egerton st Narrogin WA 6312",
@@ -106,7 +111,7 @@ var orgsArray =  [
                         "name": "Belmont Youth Programme",
                         "field": "Accommodation",
                         "suburb": "Belmont",
-                        "age": //makeRange(13, 18),
+                        "age": makeRange(13, 18),
                         "contact": 92774692,
                         "hours": "Weekdays 9 am - 5 pm",
                         "address": "Cale House, 11/52 The Crescent, Midland WA 6056",
@@ -116,7 +121,7 @@ var orgsArray =  [
                         "name": "Broome Youth Accommodation Services",
                         "field": "Accommodation",
                         "suburb": "Broome",
-                        "age": //makeRange(16, 25),
+                        "age": makeRange(16, 25),
                         "contact": 891937100,
                         "hours": "Weekdays 8am - 4:00pm",
                         "address": "34 Blackman St Broome WA 6725",
@@ -126,7 +131,7 @@ var orgsArray =  [
                         "name": "Burdekin Youth in Action",
                         "field": "Accommodation",
                         "suburb": "Broome",
-                        "age": //makeRange(15, 20),
+                        "age": makeRange(15, 20),
                         "contact": 891936391,
                         "hours": "Weekdays 9 am - 5 pm",
                         "address": "33 Louis St Broome WA 6725",
@@ -700,7 +705,7 @@ var orgsArray =  [
                         "contact": 892066209,
                         "hours": "Tuesday 9:30am-2:30am",
                         "address": "\nAboriginal Evanglical Church Penrith Place\nBalga\nWA 6061",
-                        "web": "http://www.unitingcarewest.org.au/services/indigenous-communities/aboriginal-family-respite-service/"
-                        }
-
+        "web": "http://www.unitingcarewest.org.au/services/indigenous-communities/aboriginal-family-respite-service/"
+    }
 ];
+console.alert(orgsArray[1].age);

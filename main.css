@@ -1,0 +1,15 @@
+body, html {
+    height: 100%;
+}
+#navbar {
+    background:transparent;
+    text-align: center;
+}
+
+.mainpage {
+    background-image: url("hd-wallpaper-mountain-range-mountains-114979.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-opacity: 0.75;
+}
