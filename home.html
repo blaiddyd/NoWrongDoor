@@ -5,11 +5,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>No Wrong Door</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="data.js"></script>	
+	<link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Marcellus+SC|Pangolin" rel="stylesheet">
 </head>
 <body>
 	<div class = mainpage>
@@ -20,27 +20,33 @@
 			</div>
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="home.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="all.html">Browse All</a></li>
+					<li><a href="contact.html">Feedback</a></li>
 				</ul>
 			</div>
 		</nav>
-		<div class="jumbotron">
-			<h2>What is No Wrong Door?</h3>
-				<p>No Wrong Door is a website decicated to finding resources specifically for you! </p>
+		<div id="head" class="container">
+			<h2>What is No Wrong Door?</h2>
+				<h5>No Wrong Door is a website decicated to finding resources specifically for you!
+					It uses your age, area of need, and suburb of your preference to 
+					craft a list of resources. This website is still in its building stages.
+				 Click on the "Feedback" tab to let us know what you think!
+				Thank you for visiting!</h5>
 		</div>
-		<div class="container">
+		<br>
+		<br>
+		<div id="form" class="container">
 			<h3>Get Started by Entering in your Information!</h3>
-			<form class="form-horizontal">
+			<div id="searchform" class="form-horizontal">
 					<div class="form-group">
-					  <label class="control-label col-sm-2" for="email">Age:</label>
-					  <div class="col-sm-10">
+					  <label class="control-label col-sm-4" for="age">Age:</label>
+					  <div class="col-sm-4">
 						<input type="number" class="form-control" id="age" placeholder="Enter your age">
 					  </div>
 					</div>
 					<div class="form-group">
-					  <label class="control-label col-sm-2" for="cat">Category:</label>
-					  <div class="col-sm-10">          
+					  <label class="control-label col-sm-4" for="cat">Category:</label>
+					  <div class="col-sm-4">          
 							<select class="form-control" id="cat">
 								<option value="">Select an Option</option>
 								<option value="Accommodation">Accommodation</option>
@@ -55,8 +61,8 @@
 					  </div>
 					</div>
 					<div class="form-group">
-						<label class="control-label col-sm-2" for="sub">Suburb:</label>
-						<div class="col-sm-10">
+						<label class="control-label col-sm-4" for="sub">Suburb:</label>
+						<div class="col-sm-4">
 							<select class="form-control" id="sub">
 								<option value="">Select an Option</option>
 								<option value="Maylands">Maylands</option>
@@ -107,17 +113,23 @@
 						</div>
 					</div>
 					<div class="form-group">        
-					  <div class="col-sm-offset-2 col-sm-10">
-						<button type="submit" class="btn btn-default">Go</button>
+					  <div class="col-sm-offset-5 col-sm-2">
+						<button type="submit" id="search" class="btn btn-default">Search</button>
 					  </div>
 					</div>
-				</form>
+				</div>
 		</div>
 		<br>
-		<footer>
+		<div id="result" class="container"></div>
+			<table id="filtered" class="table"></table>
+		</div>
+		<br>
+		<footer class="container-fluid">
 			<p>Made with &hearts; by <a id="git" target="_blank" href="https://github.com/ekinbukulmez">Ekin Bukulmez</a></p>
 		</footer>
+		<button onclick="backTop()" id="topBtn" title="Back to Top" class="btn btn-dark">Top</button>
 	</div>
+	<script src="data.js"></script>	
 </body>
 </html>
 
