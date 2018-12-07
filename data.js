@@ -20,7 +20,6 @@ function inRange(input, min, max) {
 }
 
 $('#search').click(function() {
-    alert('Hi!');
     var orgsArray = [{
         "OrgName": "55 Central Inc",
         "OrgField": "Accommodation",
