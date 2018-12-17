@@ -12,7 +12,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Marcellus+SC|Pangolin" rel="stylesheet">
 </head>
 <body>
-	<div class = mainpage>
+	<div class = "mainpage">
 		<nav id = "navbar" class="navbar navbar-default">
 			<div class="container-fluid">
 			<div class="navbar-header">
@@ -44,19 +44,13 @@
 						<input type="number" class="form-control" id="age" placeholder="Enter your age">
 					  </div>
 				</div>
-				<div class="form-group">
+				<div id="need" class="form-group">
 					<label class="control-label col-sm-4" for="cat">Category:</label>
 					  <div class="col-sm-4">          
 						<select class="form-control" id="cat">
-							<option value="">Select an Option</option>
-							<option value="Accommodation">Accommodation</option>
-							<option value="Counselling">Couselling & Advising</option>
-							<option value="Drugs & Alcohol">Drugs & Alcohol</option>
-							<option value="Emergency Relief">Emergency Relief</option>
-							<option value="General Youth Services">General Youth Services</option>
-							<option value="Homelessness">Homelessness</option>
-							<option value="Mental Health">Mental Heath</option>
-							<option value="Sexual Health">Sexual Health</option>
+							<option v-for="cat in categs" v-bind:value="cat.value">
+								{{ cat.text }}
+							</option>
 						</select>
 					  </div>
 				</div>
@@ -64,51 +58,9 @@
 				<label class="control-label col-sm-4" for="sub">Suburb:</label>
 					<div class="col-sm-4">
 						<select class="form-control" id="sub">
-							<option value="">Select an Option</option>
-							<option value="Maylands">Maylands</option>
-							<option value="Mandurah">Mandurah</option>
-							<option value="Wembley">Wembley</option>
-							<option value="Albany">Albany</option>
-							<option value="Rockingham">Rockingham</option>
-							<option value="Spearwood">Spearwood</option>
-							<option value="Armadale">Armadale</option>
-							<option value="Merredin">Merredin</option>
-							<option value="Narrogin">Narrogin</option>
-							<option value="Belmont">Belmont</option>
-							<option value="Broome">Broome</option>
-							<option value="Inglewood">Inglewood</option>
-							<option value="Fremantle">Fremantle</option>
-							<option value="Osborne">Osborne</option>
-							<option value="Canning">Cannning</option>
-							<option value="Balga">Balga</option>
-							<option value="Leederville">Leederville</option>
-							<option value="Bentley">Bentley</option>
-							<option value="Bunbury">Bunbury</option>
-							<option value="Dianella">Dianella</option>
-							<option valu="Geraldton">Geraldton</option>
-							<option value="Kalgoorlie">Kalgoorlie</option>
-							<option value="Karratha">Karratha</option>
-							<option value="Midland">Midland</option>
-							<option value="Parkerville">Parkerville</option>
-							<option value="Northbridge">Northbridge</option>
-							<option value="Victoria Park">Victoria Park</option>								
-							<option value="East Perth">East Perth</option>
-							<option value="Joondalup">Joondalup</option>
-							<option value="Hedland">Hedland</option>
-							<option value="Beachboro">Beechboro</option>
-							<option value="Denmark">Denmark</option>
-							<option value="Northam">Northam</option>
-							<option value="Esperance">Esperance</option>
-							<option value="Roeburne">Roeburne</option>
-							<option value="Mirrabooka">Mirrabooka</option>
-							<option value="Busselton">Busselton</option>
-							<option value="Welshpool">Welshpool</option>
-							<option value="Boddington">Boddington</option>
-							<option value="Cannington">Cannington</option>
-							<option value="Applecross">Applecross</option>
-							<option value="Nannup">Nannup</option>
-							<option value="Ballajura">Ballajura</option>
-							<option value="Stratton">Stratton</option>
+							<option v-for="sub in suburbs" v-bind:value="sub.value">
+								{{ sub.text }}
+							</option>
 						</select>
 					</div>
 			</div>
@@ -126,6 +78,8 @@
 		<br>
 		<button onclick="backTop()" id="topBtn" title="Back to Top" class="btn btn-dark">Top</button>
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="main.js"></script>
 	<script src="data.js"></script>	
 </body>
 </html>
