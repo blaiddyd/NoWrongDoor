@@ -1,4 +1,6 @@
-new Vue({
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
+const fields = new Vue({
   el: '#cat',
   data: {
     categs: [
@@ -15,8 +17,8 @@ new Vue({
   },
 });
 
-new Vue({
-  el: "#sub",
+const subs = new Vue({
+  el: '#sub',
   data: {
     suburbs: [
       { text: 'Select Your Suburb', value: '' },
@@ -62,8 +64,42 @@ new Vue({
       { text: 'Cannington', value: 'Cannington' },
       { text: 'Applecross', value: 'Applecross' },
       { text: 'Nannup', value: 'Nannup' },
-      { text: 'Ballajura', value: 'Ballajura'},
+      { text: 'Ballajura', value: 'Ballajura' },
       { text: 'Stratton', value: 'Stratton' },
     ],
   },
+});
+
+Vue.component('orgstable', {
+  props: ['org'],
+  template: `
+  <div class='orgs-table'>
+    <table class='table'>
+      <thead>
+        <tr>
+          <th>'Name'</th>
+          <th>'Category'</th>
+          <th>'Suburb'</th>
+          <th>'Ages'</th>
+          <th>'Contact'</th>
+          <th>'Hours'</th>
+          <th>'Address'</th>
+          <th>'Website'</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> {{ org.OrgName }} </td>
+          <td> {{ org.OrgField }} </td>
+          <td> {{ org.OrgSuburb }} </td>
+          <td> {{ org.OrgAge }} </td>
+          <td> {{ org.OrgContact }} </td>
+          <td> {{ org.OrgHours }} </td>
+          <td> {{ org.OrgAddress }} </td>
+          <td><a v-bind:href="org.OrgWeb"> {{ org.OrgWeb }} </a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  `
 });

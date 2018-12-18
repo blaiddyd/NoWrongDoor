@@ -702,22 +702,6 @@ const orgsArray = [{
 },
 ];
 
-function scroll() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById('topBtn').style.display = 'block';
-  } else {
-    document.getElementById('topBtn').style.display = 'none';
-  }
-}
-
-window.onscroll = function () { scroll(); };
-
-// eslint-disable-next-line no-unused-vars
-function backTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
 function inRange(input, min, max) {
   return input >= min && input <= max;
 }
