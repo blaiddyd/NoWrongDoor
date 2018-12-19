@@ -28,13 +28,20 @@
             <div id="allhead" class="container">
                 <h1>Check out all of the amazing resources available to you!</h1>
             </div>
-            <br>
-            <table id="nofilter" class="table"></table>
+			<br>
+			<div id="displayall">
+				<orgstable v-for="org in orgs" v-bind:org="org">
+
+
+				</orgstable>
+			</div>
             <br>
         </div>
 		<button onclick="backTop()" id="topBtn" title="Back to Top" class="btn btn-dark">Top</button>
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script src="assets/js/data.js"></script>	
 	<script src="assets/js/scroll.js"></script>
+	<script src="assets/js/main.js"></script>
 </body>
 </html>

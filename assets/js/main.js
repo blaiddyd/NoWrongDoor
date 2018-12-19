@@ -73,34 +73,16 @@ const subs = new Vue({
 Vue.component('orgstable', {
   props: ['org'],
   template: `
-  <div class='orgs-table'>
-    <table class='table'>
-      <thead>
-        <tr>
-          <th>'Name'</th>
-          <th>'Category'</th>
-          <th>'Suburb'</th>
-          <th>'Ages'</th>
-          <th>'Contact'</th>
-          <th>'Hours'</th>
-          <th>'Address'</th>
-          <th>'Website'</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td> {{ org.OrgName }} </td>
-          <td> {{ org.OrgField }} </td>
-          <td> {{ org.OrgSuburb }} </td>
-          <td> {{ org.OrgAge }} </td>
-          <td> {{ org.OrgContact }} </td>
-          <td> {{ org.OrgHours }} </td>
-          <td> {{ org.OrgAddress }} </td>
-          <td><a v-bind:href="org.OrgWeb"> {{ org.OrgWeb }} </a></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    <div class="orgdisplay">
+      <h3> {{ org.OrgName }} </h3>
+      <p> {{ org.OrgField }} </p>
+      <p> {{ org.OrgSuburb }} </p>
+      <p> {{ org.OrgAge }} </p>
+      <p> {{ org.OrgContact }} </p>
+      <p> {{ org.OrgHours }} </p>
+      <p> {{ org.OrgAddress }} </p>
+      <p v-bind:href="org.OrgWeb"> {{ org.OrgWeb }} </p>
+    </div>
   `,
 });
 
