@@ -73,7 +73,7 @@ const subs = new Vue({
 Vue.component('orgstable', {
   props: ['org'],
   template: `
-    <div class="orgdisplay">
+    <div class="orgsdisplay container">
       <h3> {{ org.OrgName }} </h3>
       <p> {{ org.OrgField }} </p>
       <p> {{ org.OrgSuburb }} </p>
@@ -81,7 +81,7 @@ Vue.component('orgstable', {
       <p> {{ org.OrgContact }} </p>
       <p> {{ org.OrgHours }} </p>
       <p> {{ org.OrgAddress }} </p>
-      <p v-bind:href="org.OrgWeb"> {{ org.OrgWeb }} </p>
+      <p v-bind:href=org.OrgWeb> {{ org.OrgWeb }} </p>
     </div>
   `,
 });

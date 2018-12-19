@@ -12,9 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Marcellus+SC|Pangolin" rel="stylesheet">
 </head>
 <body>
-	<div class = mainpage>
-		<nav id = "navbar" class="navbar navbar-default">
-			<div class="container-fluid">
+	<nav id = "navbar" class="navbar navbar-default">
+		<div class="container-fluid">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="#">No Wrong Door</a>
 			</div>
@@ -24,23 +23,21 @@
 					<li><a href="contact.html">Feedback</a></li>
 				</ul>
 			</div>
-        </nav>
-            <div id="allhead" class="container">
-                <h1>Check out all of the amazing resources available to you!</h1>
-            </div>
+		</nav>
+		<div class="parallax"></div>
+            <div class="container" style="text-align:center;">
+				<h1>Check out all of the amazing resources available to you!</h1>
+			</div>
+		<div class="parallax"></div>
 			<br>
 			<div id="displayall">
 				<orgstable v-for="org in orgs" v-bind:org="org">
-
-
 				</orgstable>
 			</div>
-            <br>
+			<br>
         </div>
 		<button onclick="backTop()" id="topBtn" title="Back to Top" class="btn btn-dark">Top</button>
-	</div>
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-	<script src="assets/js/data.js"></script>	
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>	
 	<script src="assets/js/scroll.js"></script>
 	<script src="assets/js/main.js"></script>
 </body>

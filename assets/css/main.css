@@ -15,6 +15,7 @@ body, html {
     text-align: center;
     background-color: white;
     font-family: 'Marcellus SC', serif;
+    margin-bottom: 0;
 }
 
 #navbar li:hover {
@@ -51,18 +52,18 @@ body, html {
     font-size: 18px;
 }
 
-#nofilter {
+.orgsdisplay {
+    
     background-color: white;
-    font-family: 'Marcellus SC', serif;
+    margin-bottom: 30px;
+    border-radius: 15px;
 }
 
-#allhead {
-    text-align: center;
-    font-family: 'Marcellus SC', serif;
-    font-weight: bolder;
-    color: black;
-    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    
+.parallax {
+    background-image: url("back.jpg");
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
